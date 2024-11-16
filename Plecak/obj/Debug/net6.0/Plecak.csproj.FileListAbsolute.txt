@@ -1,0 +1,14 @@
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\bin\Debug\net6.0\Plecak.exe
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\bin\Debug\net6.0\Plecak.deps.json
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\bin\Debug\net6.0\Plecak.runtimeconfig.json
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\bin\Debug\net6.0\Plecak.dll
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\bin\Debug\net6.0\Plecak.pdb
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\obj\Debug\net6.0\Plecak.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\obj\Debug\net6.0\Plecak.AssemblyInfoInputs.cache
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\obj\Debug\net6.0\Plecak.AssemblyInfo.cs
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\obj\Debug\net6.0\Plecak.csproj.CoreCompileInputs.cache
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\obj\Debug\net6.0\Plecak.dll
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\obj\Debug\net6.0\refint\Plecak.dll
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\obj\Debug\net6.0\Plecak.pdb
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\obj\Debug\net6.0\Plecak.genruntimeconfig.cache
+C:\Users\kplew\OneDrive\Pulpit\Plecak\Plecak\obj\Debug\net6.0\ref\Plecak.dll
