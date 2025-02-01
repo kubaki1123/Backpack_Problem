@@ -14,12 +14,17 @@ void main()
 
     data = input_file.read();
 
-    foreach (Data data_item in data)
-    {
-        Console.WriteLine($"{data_item.przedmiot} {data_item.waga} {data_item.punkty}");
-    }
-    
+    Console.WriteLine("podaj maksymalna wage zeczy w plecaku");
 
+    double Waga_plecaka = Convert.ToDouble(Console.ReadLine());
+
+    Console.WriteLine("podaj ilosc generacji algorytmu");
+    
+    int generacje = Convert.ToInt32(Console.ReadLine());
+
+    Algorytm algorytm = new Algorytm();
+
+    algorytm.create_generation(Waga_plecaka, generacje);   
 
 }
 

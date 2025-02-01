@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plecak", "Plecak\Plecak.csproj", "{86822BE2-2CA2-4744-A73E-9DA858A29574}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plecak", "Plecak\Plecak.csproj", "{86822BE2-2CA2-4744-A73E-9DA858A29574}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "Elementy rozwiązania", "{3EDF5160-D465-46C1-8177-B4292E25CFED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

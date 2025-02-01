@@ -29,7 +29,7 @@ namespace Plecak
             {
                 Data temp_data = new Data();
                 string[] buf_string = new string[3];
-                buf_string = lines[i].Split('\t');
+                buf_string = lines[i].Split('\t'); 
 
 
                 temp_data.przedmiot = buf_string[0];
