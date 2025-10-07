@@ -19,14 +19,12 @@ namespace Plecak
     {
 
         public List<Data> read() {
-            try
-            {
+            try{
                 const string path = @"C:\\Users\\kplew\\OneDrive\\Pulpit\\Plecak\\backpack.txt";
                 List<Data> input_data = new List<Data>();
                 string[] lines = File.ReadAllLines(path);
 
-            for (int i = 0; i < lines.Length; i++)
-            {
+            for (int i = 0; i < lines.Length; i++){
                 Data temp_data = new Data();
                 string[] buf_string = new string[3];
                 buf_string = lines[i].Split('\t'); 
@@ -43,8 +41,7 @@ namespace Plecak
                 return input_data;
             }
 
-            catch (UnauthorizedAccessException)
-            {
+            catch (UnauthorizedAccessException){
                 Console.WriteLine("brak dostepu do pliku");
                 Environment.Exit(1);
                 return null;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using Plecak;
 
 main();
@@ -24,7 +25,18 @@ void main()
 
     Algorytm algorytm = new Algorytm();
 
-    algorytm.create_generation(Waga_plecaka, generacje);   
+    int[,] item_list = new int[10, data.Count()];
+
+    item_list = algorytm.create_generation(data);
+
+    Dictionary<string, int> evaluated_list = new Dictionary<string, int>();
+
+    evaluated_list = algorytm.evaluate(item_list, Waga_plecaka, data);
+
+    foreach (var para in evaluated_list) {
+        Console.WriteLine($"Plecak: {para.Key} -> pukty {para.Value}");
+    }
+    
 
 }
 
