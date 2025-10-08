@@ -36,8 +36,25 @@ void main()
     foreach (var para in evaluated_list) {
         Console.WriteLine($"Plecak: {para.Key} -> pukty {para.Value}");
     }
+    string[] best_specimen = new string[5];
     
+    best_specimen = algorytm.select_the_best(evaluated_list);
 
+
+
+
+
+    for (int i = 0; i < generacje; i++)
+    {
+        item_list = algorytm.crossoverAndBuild(data, best_specimen);
+        evaluated_list = algorytm.evaluate(item_list, Waga_plecaka, data);
+
+        foreach (var para in evaluated_list)
+        {
+            Console.WriteLine($"Plecak: {para.Key} -> pukty {para.Value}");
+        }
+        best_specimen = algorytm.select_the_best(evaluated_list);
+    }
 }
 
 

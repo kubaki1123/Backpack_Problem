@@ -74,5 +74,74 @@ namespace Plecak
         }
 
 
+        public string[] select_the_best(Dictionary<string, int> slownik_plecakow_punktow)
+        {
+            
+            string[] prime_specimen = slownik_plecakow_punktow.OrderByDescending(para => para.Value).Select(para => para.Key).Take(5).ToArray();                            
+
+            return prime_specimen;
+
+        }
+
+        string crossover(string[] best_specimen)
+        {
+            Random random = new Random();
+            string[] best_specimen_no_comas = new string[best_specimen.Length];
+            for (int i = 0; i < best_specimen.Length; i++)
+            {
+                best_specimen_no_comas[i] = best_specimen[i].Replace(",", "");
+            }
+
+            string[] crossovered = new string[10];
+            string word = "";
+
+            string[] chosen_specimen = new string[2];
+            for (int i = 0; i < 2; i++)
+            {
+                chosen_specimen[i] = best_specimen_no_comas[random.Next(0, best_specimen_no_comas.Length)];
+            }
+
+
+            for (int i = 0; i < chosen_specimen.Length - 1; i++)
+            {
+                for (int j = 0; j < chosen_specimen[i].Length; j++)
+                {
+
+                    if (best_specimen_no_comas[i][j] == best_specimen_no_comas[i + 1][j])
+                    {
+                        word = word + best_specimen_no_comas[i][j];
+                    }
+                    else
+                    {
+                        word = word + Convert.ToString(random.Next(0, 2));
+                    }
+
+                    
+                }
+
+            }
+            return word;
+
+        }
+
+
+
+
+        public int[,] crossoverAndBuild(List<Data> data, string[] best_specimen)
+        {
+            int[,] next_gen = new int[10, data.Count];
+            string word;
+            for (int i = 0; i < 10; i++){
+                word = crossover(best_specimen);
+                
+                for (int j = 0;j < word.Length; j++)
+                {
+                    next_gen[i,j] = Convert.ToInt32(Convert.ToString(word[j]));
+                }
+            }
+
+            return next_gen;
+        }
     }
+
 }
