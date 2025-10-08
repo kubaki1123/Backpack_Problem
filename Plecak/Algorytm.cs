@@ -107,9 +107,9 @@ namespace Plecak
                 for (int j = 0; j < chosen_specimen[i].Length; j++)
                 {
 
-                    if (best_specimen_no_comas[i][j] == best_specimen_no_comas[i + 1][j])
+                    if (chosen_specimen[i][j] == chosen_specimen[i + 1][j])
                     {
-                        word = word + best_specimen_no_comas[i][j];
+                        word = word + chosen_specimen[i][j];
                     }
                     else
                     {
@@ -123,9 +123,6 @@ namespace Plecak
             return word;
 
         }
-
-
-
 
         public int[,] crossoverAndBuild(List<Data> data, string[] best_specimen)
         {
